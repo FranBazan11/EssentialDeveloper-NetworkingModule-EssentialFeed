@@ -8,14 +8,6 @@
 import XCTest
 import EssentialFeed
 
-class HTTPClientSpy: HTTPClient {
-    func get(from url: URL) {
-        requestedURL = url
-    }
-    
-    var requestedURL: URL?
-}
-
 class RemoteFeedLoaderTests: XCTestCase {
     
     func test_init_doesNotRequestDataFromURL() {
