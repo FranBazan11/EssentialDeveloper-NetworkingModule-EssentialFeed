@@ -1,4 +1,4 @@
- name: CI
+name: CI
 
 on:
   push:
@@ -8,20 +8,23 @@ on:
 
 jobs:
   build:
-
     runs-on: macos-latest
 
     steps:
-    - uses: actions/checkout@v4
+    - name: Checkout
+      uses: actions/checkout@v4
     
     - name: Select Xcode
-      run: sudo xcode-select -switch /Applications/Xcode_15.2.app
+      uses: maxim-lobanov/setup-xcode@v1
+      with:
+        xcode-version: '16.2'
     
     - name: Build and test
-      run: xcodebuild clean build test \
-      -project EssentialFeed/EssentialFeed.xcodeproj \
-      -scheme "CI" \
-      -testPlan CI \
-      CODE_SIGN_IDENTITY="" \
-      CODE_SIGNING_REQUIRED=NO
-
+      run: |
+        xcodebuild clean build test \
+          -project EssentialFeed/EssentialFeed.xcodeproj \
+          -scheme "CI" \
+          -testPlan CI \
+          -enableCodeCoverage YES \
+          CODE_SIGN_IDENTITY="" \
+          CODE_SIGNING_REQUIRED=NO

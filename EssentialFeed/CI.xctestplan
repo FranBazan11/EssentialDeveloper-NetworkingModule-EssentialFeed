@@ -1,6 +1,12 @@
 {
   "configurations" : [
+    {
+      "id" : "3081A153-7BFE-4838-ACA0-642E044894DF",
+      "name" : "Configuration 1",
+      "options" : {
 
+      }
+    }
   ],
   "defaultOptions" : {
 
