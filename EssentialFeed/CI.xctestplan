@@ -1,7 +1,7 @@
 {
   "configurations" : [
     {
-      "id" : "7E404182-B572-457F-9BF5-1BB5A4E9A692",
+      "id" : "3081A153-7BFE-4838-ACA0-642E044894DF",
       "name" : "Configuration 1",
       "options" : {
 
@@ -12,7 +12,20 @@
 
   },
   "testTargets" : [
-
+    {
+      "target" : {
+        "containerPath" : "container:EssentialFeed.xcodeproj",
+        "identifier" : "080EDEF921B6DA7E00813479",
+        "name" : "EssentialFeedTests"
+      }
+    },
+    {
+      "target" : {
+        "containerPath" : "container:EssentialFeed.xcodeproj",
+        "identifier" : "97E321352E391318003D180D",
+        "name" : "EssentialFeedEndToEndTests"
+      }
+    }
   ],
   "version" : 1
 }
