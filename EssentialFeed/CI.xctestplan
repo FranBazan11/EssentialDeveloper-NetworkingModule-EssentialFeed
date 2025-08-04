@@ -1,7 +1,7 @@
 {
   "configurations" : [
     {
-      "id" : "3081A153-7BFE-4838-ACA0-642E044894DF",
+      "id" : "4FDE9FB0-D842-48CB-BC59-E5D763259B17",
       "name" : "Configuration 1",
       "options" : {
 
@@ -9,21 +9,21 @@
     }
   ],
   "defaultOptions" : {
-
+    "threadSanitizerEnabled" : true
   },
   "testTargets" : [
     {
       "target" : {
         "containerPath" : "container:EssentialFeed.xcodeproj",
-        "identifier" : "080EDEF921B6DA7E00813479",
-        "name" : "EssentialFeedTests"
+        "identifier" : "97E321352E391318003D180D",
+        "name" : "EssentialFeedEndToEndTests"
       }
     },
     {
       "target" : {
         "containerPath" : "container:EssentialFeed.xcodeproj",
-        "identifier" : "97E321352E391318003D180D",
-        "name" : "EssentialFeedEndToEndTests"
+        "identifier" : "080EDEF921B6DA7E00813479",
+        "name" : "EssentialFeedTests"
       }
     }
   ],
