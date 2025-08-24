@@ -126,6 +126,7 @@
 				97E924E02E5ACF8A00130551 /* FeedCache */,
 				080EDF0121B6DA7E00813479 /* Info.plist */,
 				97CAC56D2DEE118C0020D377 /* Feed API */,
+				97354B1E2E26E78B00025FB4 /* Helpers */,
 			);
 			path = EssentialFeedTests;
 			sourceTree = "<group>";
@@ -163,7 +164,6 @@
 			children = (
 				975B33272DD6F2870095575D /* LoadFeedFromRemoteUseCaseTests.swift */,
 				977DCA992E03226C007700DB /* URLSessionHTTPClientTests.swift */,
-				97354B1E2E26E78B00025FB4 /* Helpers */,
 			);
 			path = "Feed API";
 			sourceTree = "<group>";
