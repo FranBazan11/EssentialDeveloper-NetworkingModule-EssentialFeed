@@ -197,10 +197,6 @@ class URLSessionHTTPClientTests: XCTestCase {
             
             if let error = URLProtocolStub.stub?.error {
                 client?.urlProtocol(self, didFailWithError: error)
-            } else if URLProtocolStub.stub?.response == nil && URLProtocolStub.stub?.data == nil {
-                // Si no hay response ni data, simular error
-                let error = NSError(domain: "URLProtocolStub", code: -1, userInfo: nil)
-                client?.urlProtocol(self, didFailWithError: error)
             }
             
             client?.urlProtocolDidFinishLoading(self)
