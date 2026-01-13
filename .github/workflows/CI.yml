@@ -41,7 +41,7 @@ jobs:
             -project EssentialFeed/EssentialFeed.xcodeproj \
             -scheme "CI_iOS" \
             -sdk iphonesimulator \
-            -destination 'platform=iOS Simulator,name=iPhone 16,OS=latest' \
+            -destination 'platform=iOS Simulator,name=iPhone 16 Pro,OS=18.4' \
             -testPlan CI_iOS \
             -enableCodeCoverage YES \
             CODE_SIGN_IDENTITY="" \
